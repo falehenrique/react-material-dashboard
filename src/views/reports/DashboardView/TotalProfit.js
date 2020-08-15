@@ -10,7 +10,8 @@ import {
   makeStyles,
   colors
 } from '@material-ui/core';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+// import PeopleIcon from '@material-ui/icons/AttachMoney';
+import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -43,18 +44,18 @@ const TotalProfit = ({ className, ...rest }) => {
               gutterBottom
               variant="h6"
             >
-              TOTAL PROFIT
+              Cupons emitidos
             </Typography>
             <Typography
               color="textPrimary"
               variant="h3"
             >
-              $23,200
+              23
             </Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <AttachMoneyIcon />
+              <PeopleIcon />
             </Avatar>
           </Grid>
         </Grid>

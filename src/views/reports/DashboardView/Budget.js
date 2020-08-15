@@ -52,7 +52,7 @@ const Budget = ({ className, ...rest }) => {
               gutterBottom
               variant="h6"
             >
-              BUDGET
+              Vendas através de cupom
             </Typography>
             <Typography
               color="textPrimary"
@@ -83,7 +83,7 @@ const Budget = ({ className, ...rest }) => {
             color="textSecondary"
             variant="caption"
           >
-            Since last month
+            Desde o último mês
           </Typography>
         </Box>
       </CardContent>

@@ -22,34 +22,25 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 const data = [
   {
     id: uuid(),
-    name: 'Dropbox',
+    name: 'Pedro',
     imageUrl: '/static/images/products/product_1.png',
-    updatedAt: moment().subtract(2, 'hours')
+    updatedAt: moment().subtract(2, 'hours'),
+    status: "Pendente"
   },
   {
     id: uuid(),
-    name: 'Medium Corporation',
+    name: 'João',
     imageUrl: '/static/images/products/product_2.png',
-    updatedAt: moment().subtract(2, 'hours')
+    updatedAt: moment().subtract(2, 'hours'),
+    status: "Pendente"    
   },
   {
     id: uuid(),
-    name: 'Slack',
+    name: 'Alice',
     imageUrl: '/static/images/products/product_3.png',
-    updatedAt: moment().subtract(3, 'hours')
+    updatedAt: moment().subtract(3, 'hours'),
+    status: "Ativado"
   },
-  {
-    id: uuid(),
-    name: 'Lyft',
-    imageUrl: '/static/images/products/product_4.png',
-    updatedAt: moment().subtract(5, 'hours')
-  },
-  {
-    id: uuid(),
-    name: 'GitHub',
-    imageUrl: '/static/images/products/product_5.png',
-    updatedAt: moment().subtract(9, 'hours')
-  }
 ];
 
 const useStyles = makeStyles(({
@@ -73,7 +64,7 @@ const LatestProducts = ({ className, ...rest }) => {
     >
       <CardHeader
         subtitle={`${products.length} in total`}
-        title="Latest Products"
+        title="Últimos cadastros de embaixadores"
       />
       <Divider />
       <List>
@@ -99,6 +90,9 @@ const LatestProducts = ({ className, ...rest }) => {
             >
               <MoreVertIcon />
             </IconButton>
+            <ListItemText
+              primary={product.status}
+            />            
           </ListItem>
         ))}
       </List>
